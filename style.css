@@ -85,6 +85,7 @@ nav {
 
   /* SECTIONS */
 
+  
 section {
     padding-top: 4vh;
     height: 96vh;
@@ -137,6 +138,11 @@ section {
     font-size: 3rem;
     text-align: center;
   }
+  title span::before {
+    content: "";
+    position: absolute;
+
+  }
   
   #socials-container {
     display: flex;
@@ -155,28 +161,29 @@ section {
   /* BUTTONS */
   
   .btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .btn {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
-  }
-  
-  .btn-color-1,
-  .btn-color-2 {
-    border: rgb(113, 112, 112) 0.1rem solid;
-  }
-  
-  .btn-color-1:hover,
-  .btn-color-2:hover {
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem; /* Adjust this value to add some spacing between the text and buttons */
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(113, 112, 112) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
   
   .btn-color-1,
   .btn-color-2:hover {
